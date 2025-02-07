@@ -12,4 +12,4 @@
     <li><a href="https://fernandesdennys.github.io/HTML-CSS/M%C3%B3dulo1/ex008/" target="_blank"> Executar o Ex.008</li>
     <li><a href="https://fernandesdennys.github.io/HTML-CSS/M%C3%B3dulo1/ex009/" target="_blank"> Executar o Ex.009</li>
     <li><a href="https://fernandesdennys.github.io/HTML-CSS/M%C3%B3dulo1/ex010/" target="_blank"> Executar o Ex.010</li>
-</ul>
+
