@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+*{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    box-sizing: border-box;   
+}
+@font-face {
+    font-family: 'carson';
+    src: url('pacote-projeto-d010/fontes/Carson.otf') format('opentype');
+    src: url('pacote-projeto-d010/fontes/idroid\ idroid.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    }
+body {
+    background-color: #E8E5C2;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+       
+    }
+    header {
+        background-image:linear-gradient(#1E8B4C,#023C1B) ;
+        align-content: center;
+        }                   
+    header > h1 {
+        color: white;
+        text-shadow: 2px 2px 2px black;
+        text-align: center;
+        font-family: Carson,serif;
+        font-size: 3em;
+        margin-top: 0px;
+    }
+    .subtitulo {
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        text-shadow: 2px 2px 2px black;
+        text-align: center;
+        font-size: 1.2em;
+        padding-bottom: 50px;                
+    }
+    .rodape {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: small;
+        text-align: center;
+        padding: 10px;
+        color: white;
+        background-color: #023C1B;   
+    }
+    nav > a {
+        display: inline-block;
+        text-justify: center;
+        padding: 10px;
+        margin-bottom: 4px;
+        border-radius: 6px;
+        text-shadow: 2px 2px 3px black;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #b3f8d1;
+        text-decoration: none;         
+        }
+    nav > a:hover {
+            background-color:#7bcf9f;
+        }
+    main {                
+        text-align: center;        
+        box-shadow: 6px 6px 8px black;
+        background-color: rgb(255, 255, 255);
+        border-radius: 0px 0px 20px 20px;
+        max-width: 1500px;
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;        
+        margin: 0 auto;          
+    }
+    .noticias {
+        text-align: center;
+        font-family: idroid, sans-serif;
+        font-size: 2.5em;
+        color:#023C1B;        
+    }
+    h2 {
+        text-align: left;
+        text-indent: 1em;
+        color: #023C1B;
+        background-image: linear-gradient(to right,#a4f1bf9a,#fff);
+        font-family: idroid, sans-serif;
+    }
+    p {
+        text-indent: 1em;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+    }
+    .destaque {
+        color: #145D35;
+        font-weight: bold;    
+    }
+    .link {
+        background-color:#7bcf9f;
+        color: #145D35;
+        font-weight: bold;
+        text-decoration: none;      
+    }
+    .link::after {
+        content: '🔗';
+    }
+    .link:hover {
+        text-decoration: underline;    
+    }
+    section {
+        box-sizing: border-box;
+        background-color: #023C1B;
+        padding: 25px;        
+    }
+    .video {
+        max-width: 800px; /* Define um limite máximo */            
+        width: 100%;  /* Ocupa toda a largura do contêiner */     
+        aspect-ratio: 16 / 9; /* Mantém a proporção widescreen */
+        margin: auto;
+     }
+     iframe {
+        width: 100%;
+        height: 100%;
+    }
+    aside {
+        background-color:#7bcf9f;
+        padding: 10px;
+        margin: 20px;
+        border-radius: 10px;
+        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.651);
+    }
+    aside > h3 {
+        text-align: left;
+        color: white;
+        background-color: #023C1B;
+        padding: 10px;
+        margin: -10px;
+        border-radius: 10px 10px 0px 0px;
+    }
+    aside > ul {
+        list-style-type: '\2714\00A0\00A0';
+        list-style-position: inside;
+        columns: 2;
+    }

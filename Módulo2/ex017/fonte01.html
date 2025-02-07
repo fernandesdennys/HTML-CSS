@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {font-family: 'jetbrains mono', monospace, sans-serif;
+
+            /*
+            Medidas Absolutas
+            cm – Centímetros
+            mm – Milímetros
+            in – Polegadas (1in = 2.54cm = 96px)
+            px – Pixels (padrão na tela, geralmente 1px = 1/96 de uma polegada)
+            pt – Pontos (1pt = 1/72 de uma polegada, usado em tipografia)
+            pc – Picas (1pc = 12pt, também usado em tipografia)
+            
+            Medidas Relativas
+            % – Porcentagem (em relação ao elemento pai)
+            em – Relativo ao tamanho da fonte do elemento
+            ex – Relativo à altura da letra “x” do elemento
+            rem – Relativo ao tamanho da fonte do elemento raiz (html)
+            vw – Relativo a 1% da largura da viewport
+            vh – Relativo a 1% da altura da viewport
+            vmin – Relativo a 1% da menor dimensão da viewport
+            vmax – Relativo a 1% da maior dimensão da viewport
+
+            */
+            font-size: 1em; /* 16px */
+            h1
+             {
+                font-family: jetbrains mono, monospace, sans-serif;
+                font-size: 2em; /* 32px */
+                font-weight: bolder;
+                font-style: italic;
+                
+                /*Propriedade Shorthand font
+                -font-styyle -> font-weight -> font-size -> font-family
+                
+                ftony-family: "JetBrains mono, sans-serif;
+                font-weight: bolder;
+                font-size: 3em;
+                font-style: italic;
+                */
+                font: italic bolder 2.5em "JetBrains mono", sans-serif;
+            }
+            h2 {
+                font: italic bolder 2.5em "JetBrains mono", sans-serif;
+            }
+
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit temporibus quas assumenda a, provident aperiam reprehenderit nam tenetur similique neque illo, quasi quisquam perferendis repudiandae impedit asperiores debitis, reiciendis cum Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id culpa quisquam iusto, excepturi dolores molestiae totam esse sapiente voluptatem eaque asperiores sit illum nobis, modi quo neque ullam ea alias? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla perferendis quasi, placeat neque velit distinctio! Iusto provident magnam voluptatem culpa tenetur quae itaque magni illo dolore, et deserunt unde deleniti.</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero consequuntur natus laborum eum, sunt impedit voluptas, ipsa adipisci magni et eos, dolor animi ipsum eveniet sit quaerat id perspiciatis. Cumque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, earum cupiditate voluptatibus odio aut quam, minima iste maiores hic, praesentium explicabo! Labore, velit aliquam? Explicabo, fuga quasi. Atque, enim modi?</p>
+    
+</body>
+</html>

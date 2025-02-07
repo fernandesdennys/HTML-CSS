@@ -1,0 +1,22 @@
+@charset "utf-8";
+body {
+            background-color: gray ;
+            font-family: monospace;
+            font-size: 15px;
+        
+
+        }
+        h1 {
+            color: whitesmoke;
+            background-color: black;
+        }
+        h2 {
+            color: black; 
+                }
+                
+                
+        p{
+            color: white;
+            font-size: 14px;
+        }
+    

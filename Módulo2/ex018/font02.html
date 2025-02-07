@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'Love Vale';
+            src: url('fonte/Love\ Vale.ttf') format('opentype'), url('fonte/Love\ Vale.ttf') format('truetype'), url('fonte/Love\ Vale.ttf') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            /*
+            Tipos de format
+            -opentype (otf)
+            -truetype (ttf)
+            -embedded-opentype
+            -trueType-aat (Apple Advanced Typography)
+            -svg
+            */
+        }
+        body {
+            font-family: Love vale, Helvetica, sans-serif;
+        }
+        p {
+            font-family: 'love vale', Times, serif;
+            font-size: 2em;
+            font-weight: normal;
+        }
+        h1 {
+            font-family: 'love vale', Times, serif;
+            font-size: 3em;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá Mundo</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate temporibus voluptatum rem omnis assumenda. Dolor molestias, voluptatum impedit quam earum, deleniti consequuntur consectetur exercitationem fugiat dolorem magni, odit sint et?</p>
+    
+</body>
+</html>
