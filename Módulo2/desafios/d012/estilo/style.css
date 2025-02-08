@@ -1,5 +1,71 @@
 @charset "UTF-8";
 
-body {
-    
+@font-face {
+        font-family: 'troika';
+        src: url('/d012/fontes/troika.otf') format('opentype');
+    }
+* {
+    margin: 0px;
+    padding: 0px;   
+}
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header > h1 {
+    padding-top: 50px;
+    font-family: troika
+}
+header > p {
+    padding-bottom: 50px;
+}
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vw;
+    line-height: 1.5em;
+    padding-left: 30px;
+}
+section.normal {
+    background-color: white;
+    color: black;
+}
+section.imagem {
+    background-color: gray;
+    color:white  
+}
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.384);
+    width: 400px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
