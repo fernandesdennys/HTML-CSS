@@ -96,9 +96,12 @@ section#img05 {
     background-position: center right;
     background-position: center bottom;
 }
+section#img06 {
+    background-image: url('../imagens/library-1.jpg');
+}
 
 section#img07 {
-    background-image: url('../imagens/library-1.jpg');
+    background-image: url('../imagens/library-2.jpg');
 
 }
 
