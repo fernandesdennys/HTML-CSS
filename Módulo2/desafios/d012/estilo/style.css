@@ -1,19 +1,18 @@
 @charset "UTF-8";
-
+      
 @font-face {
-        font-family: 'troika';
-        src: url('/d012/fontes/troika.otf') format('opentype');
-        font-family: 'slabo';
-    }
-    @import url('https://fonts.googleapis.com/css2?family=Slabopx&display=swap');
-    
-    @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+    font-family: 'Nunito';
+    src: url('../fontes/Nunito.ttf');
+}
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fontes/Slabo.ttf');
+}
 
-:root { /* Pre define as fontes e cores usada no site */
-    --fonte1: "troika", serif;  /*Título*/
-    --fonte2: "Slabo", serif; /*Texto padrão*/
-    --fonte3: "Nunito", serif; /*Sub-Título, Rodapé, etc...*/
-
+:root {
+    --fonte1: "troika", serif;
+    --fonte2: "Nunito", serif;
+    --fonte3: "Slabo", serif;
 }
 * {
     margin: 0px;
@@ -31,10 +30,12 @@ header {
 }
 header > h1 {
     padding-top: 50px;
-    font-family: var(--fonte1)
+    font-family: var(--fonte1);
+    font-size: 10vw; /*Mantem o tamanho proporcional a tela*/
 }
 header > p {
     padding-bottom: 50px;
+    font-family: var(--fonte2);
 
 }
 header a, footer a {
@@ -51,6 +52,7 @@ section {
     line-height: 1.5em;
     padding-left: 30px;
     font-family: var(--fonte2);
+    font-size: 2vw; 
 }
 section.normal {
     background-color: white;
@@ -62,7 +64,9 @@ section.imagem {
 }
 section.imagem > p {
     background-color: rgba(0, 0, 0, 0.384);
-    width: 400px;
+    display: inline-block;
+    padding: 10px;
+    
 
 }
 
@@ -81,5 +85,5 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
-
+    font-family: var(--fonte3);
 }
