@@ -10,21 +10,30 @@
     <h1> Uso de tabelas grandes </h1>
 <!--
     ANATOMIA PARA TABELAS GRANDES
+    
     TABLE
+        CAPTION 
         THEAD
             TR, TD, TH
         TBODY
             TR, TD, TH
         TFOOT
             TR, TD, TH
+    scope="col" = indica que, oque estiver listado na mesma coluna referente-se a coluna marcada com a tag scope="col"
+    Ex: <th scope="col">Estado</th> e usando junto a tag style ="width:" voce consegue alterar a largura da tabela individual de cada linha com a tag, ex: <th scope="col" style="width: 100px;">População</th>
 
-    -->
+    th scope="row" indica que, oque estiver na mesma linha referente-se a linha marcada com a tag th scope="row"
+    Ex: <th th scope="row">Total de Hábitantes</th>
+    
+       
+ -->
     
 <table>
+    <caption>População das Unidades Federativas</caption>
     <thead>
         <tr>
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col" style="width: 100px;">Estado</th>
+            <th scope="col" style="width: 100px;">População</th>
         </tr>
     </thead>
     <tbody>
@@ -138,7 +147,7 @@
         </tr>        
     </tbody>
     <tfoot>
-        <th>Total de Habitantes</th>
+        <th scope="row">Total de Habitantes</th>
         <td class="num"><strong>203.062.512</strong></td>
     </tfoot>
 </table>

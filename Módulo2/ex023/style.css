@@ -11,19 +11,29 @@ body {
     font-family: var(--fonte-padrão);
 }
 
+caption {
+    font-size: 1.5em;
+    background-color: lightgray;
+    border: 1px;
+    padding: 10px;
+}
+
 table {
     width: 500px;
+    border-collapse: collapse;
 }
-td, th {
+td, th, caption {
     border: 1px solid black;
     padding: 10px;
 }
-thead {
+thead, tfoot {
     background-color: gray;
+    color: black;
 }
-tfoot {
+tbody > tr:nth-child(2n) {
     background-color: gray;
+
 }
 td.num {
-    text-align: right;
+    text-align: center;
 }
