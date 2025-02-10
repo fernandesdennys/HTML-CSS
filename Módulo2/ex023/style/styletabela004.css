@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+:root {
+    --canada: linear-gradient(to right, #ff0000,#FFFFFF);
+    --reinounido: linear-gradient(to right, #00247D, #FFFFFF, #CF142B);
+    --alemanha: linear-gradient(to right, #000000, #FF0000, #FFCC00);
+    --russia: linear-gradient(to right, #0033A0, #FFFFFF, #D52B1E);
+    --franca: linear-gradient(to right, #0055A4, #FFFFFF, #EF4135);
+    --china: linear-gradient(to right, #DE2910, #FFDE00);
+    --mexico: linear-gradient(to right, #006341, #FFFFFF, #CE1126);
+    --belgica: linear-gradient(to right, #000000, #FDDA24, #EF3340);
+    --suica: linear-gradient(to right, #FF0000, #FFFFFF);
+    --japao: linear-gradient(to right, #FFFFFF, #BC002D);
+    --mediterraneo: linear-gradient(to right, #0047AB, #FFFFFF);
+}
+
+
+body {
+    font-family: monospace,sans-serif;
+ }
+
+tbody{
+border-collapse: separate;
+width: 600px;
+
+}
+table {
+position: relative;
+}
+thead > tr > th {
+position: sticky;
+top: 0;
+background-color: gray;
+color: white;
+width: 200px;
+padding: 10px;
+border-radius: 5px;       
+}
+
+td{
+border: 1px solid black;
+padding: 10px;
+text-align: center;
+}
+td.ca {
+    background-image: var(--canada);
+}
+td.uk {
+    background-image: var(--reinounido);
+}
+td.de {
+    background-image: var(--alemanha);
+}
+td.ru {
+    background-image: var(--russia);
+}
+td.fr {
+    background-image: var(--franca);
+}
+td.cn {
+    background-image: var(--china);
+}
+td.mx {
+    background-image: var(--mexico);
+}
+td.be {
+    background-image: var(--belgica);
+}
+td.ch {
+    background-image: var(--suica);
+}
+td.jp {
+    background-image: var(--japao);
+}
+td.mt {
+    background-image: var(--mediterraneo);
+}
