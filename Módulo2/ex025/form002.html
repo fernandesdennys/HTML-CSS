@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <!--nome é importante para HTML/PHP
+            e o IP é importante para fazer LABEL e JavaScript
+            
+            REQUIRED = Preenchimento Obrigatório.
+
+            MINILENGHT e MAXILENGHT = Quantidade minima e máxima de caracteres necessário.
+
+            SIZE = Tamanho da caiaxa de caracteres.
+
+            PLACEHOLDER = Ajuda o usuário na hora de preencher o cadástro especificando o que vai preencher na caixa.
+
+            AUTOCOMPLETE = Para funcionar tem que usar autocomplete ON na caixa FORM.-->
+            <label for="iusu">Usuário:</label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="20" placeholder="Nome do Usuário" autocomplete="username">
+        </p>
+        <p>
+            <label for="isen">Senha:</label>
+            <input type="password" name="sen" id="isen" required minlength="8" maxlength="20" size="10" placeholder="Senha" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>
