@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+/*ESTILO PARA TELAS*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+h1 {
+    background-color: gray;
+    width: 200px;
+    border-radius: 20px;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    color: white;    
+    
+}
+h1:hover{
+    background-color: rgb(70, 70, 70);
+}
+menu ul {
+    list-style-type: none;
+    background-color: gray;
+    padding: 5px;
+    
+}
+menu {
+    text-align: center;
+    margin: 5px;
+    
+}
+menu li {
+    display: inline-block;
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.8em;    
+}
+menu a:hover {    
+    background-color: rgb(70, 70, 70);
+    color: white;
+    font-weight: bolder;
+    text-shadow: 2px 2px 5px black;
+    padding: 10px;
+    border-radius: 4px;   
+}
+h2 { 
+   text-align: center;
+   padding-bottom: 10px;
+}
+p {
+    text-indent: 30px;
+    text-align: center;
+}
+article{
+    width: 600px;
+    display: block;
+    margin: 10px;
+}
+article::after {
+    content: 'Esse artigo foi impresso através do site www.cursoemvideo.com';
+}
