@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iest">Estado</label>
+            <select name="estado" id="iest">
+                <option value="selected">------Escolha------</option>
+                <optgroup label="Região Norte">
+                    <option value="AC">Acre</option>
+                    <option value="AP">Amapá</option> 
+                    <option value="AM">Amazonas</option>
+                    <option value="PA">Pará</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="TO">Tocantins</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="AL">Alagoas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="MA">Maranão</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PB">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="SE">Sergipe</option>
+                </optgroup>
+
+                <optgroup label="Centro-Oeste">
+                    <option value="DF">Distrito Federal</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+
+                <optgroup label="Suldeste">
+                    <option value="ES">Espírito Santo</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                </optgroup>
+
+                <optgroup label="Região Sul">
+                    <option value="PR">Paraná</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Profissão: </label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option>Administrador</option>
+                <option>Advogado</option>
+                <option>Arquiteto</option>
+                <option>Artista</option>
+                <option>Atendente</option>
+                <option>Atuário</option>
+                <option>Biólogo</option>
+                <option>Bibliotecário</option>
+                <option>Bioquímico</option>
+                <option>Cabeleireiro</option>
+                <option>Cadista</option>
+                <option>Caminhoneiro</option>
+                <option>Cientista da Computação</option>
+                <option>Chef de Cozinha</option>
+                <option>Engenheiro Civil</option>
+                <option>Cozinheiro</option>
+                <option>Criminólogo</option>
+                <option>Dançarino</option>
+                <option>Designer</option>
+                <option>Desenvolvedor</option>
+                <option>Diretor</option>
+                <option>Doutor</option>
+                <option>Educador</option>
+                <option>Economista</option>
+                <option>Eletricista</option>
+                <option>Embaixador</option>
+                <option>Empreendedor</option>
+                <option>Enfermeiro</option>
+                <option>Encanador</option>
+                <option>Engenheiro Químico</option>
+                <option>Estatístico</option>
+                <option>Etiquetador</option>
+                <option>Farmacêutico</option>
+                <option>Fazendeiro</option>
+                <option>Físico</option>
+                <option>Fotógrafo</option>
+                <option>Freelancer</option>
+                <option>Garçom</option>
+                <option>Geógrafo</option>
+                <option>Gerente</option>
+                <option>Ginecologista</option>
+                <option>Guia Turístico</option>
+                <option>Imunologista</option>
+                <option>Infectologista</option>
+                <option>Instrutor</option>
+                <option>Investigador</option>
+                <option>Jornalista</option>
+                <option >Juiz</option>
+                <option>Laboratorista</option>
+                <option>Letrólogo</option>
+                <option>Logístico</option>
+                <option>Maquinista</option>
+                <option>Marceneiro</option>
+                <option>Matemático</option>
+                <option>Médico</option>
+                <option>Mercadólogo</option>
+                <option>Meteorologista</option>
+                <option>Militar</option>
+                <option>Ministro</option>
+                <option>Marketing</option>
+                <option>Modelo</option>
+                <option>Motorista</option>
+                <option>Músico</option>
+                <option>Nanotecnólogo</option>
+                <option>Nutricionista</option>
+                <option>Necromante</option>
+                <option>Nutrólogo</option>
+                <option>Odontologista</option>
+                <option>Oftalmologista</option>
+                <option>Oncologista</option>
+                <option>Pedagogo</option>
+                <option>Pesquisador</option>
+                <optio>Policial Federal</option>
+                <optio>Piloto</option>
+                <option>Planejador</option>
+                <option>Pintor</option>
+                <option>Poeta</option>
+                <option>Policial</option>
+                <option>Produtor</option>
+                <option>Psicólogo</option>
+                <option>Publicitário</option>
+                <option>Químico</option>
+                <option>Radiologista</option>
+                <option>Recepcionista</option>
+                <option>Redator</option>
+                <option>Refrigerista</option>
+                <option>Relógioeiro</option>
+                <option>Soldador</option>
+                <option>Segurança</option>
+                <option>Sociólogo</option>
+                <option>Supervisor</option>
+                <option>Tatuador</option>
+                <option>Técnico</option>
+                <option>Terapeuta</option>
+                <option>Tesoureiro</option>
+                <option>Técnico em Informática</option>
+                <option>Turismólogo</option>
+                <option>Veterinário</option>
+                <option>Vidraceiro</option>
+                <option>Web Designer</option>
+                <option>Zelador</option>
+            </datalist>
+        </p>       
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+        <p>
+            <label for="imsg">Mensagens: </label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+
+
+    </form>
+</body>
+</html>
