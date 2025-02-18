@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+:root {
+    --color-1: #330505;
+    --color-2: #5E1919;
+    --color-3: #883B3B;
+    --color-4: #B36B6B;
+    --color-5: #DDA9A9;
+}
+
+@media screen and (min-width: 768px) {
+    span#m1 {
+        display: none;
+        
+    }
+    menu {
+        display: block;
+        
+    }
+    menu > ul > li {
+        display: inline-block;
+       
+    }
+    
+    main {
+        width: 768px;
+    }
+    
+}
