@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        /* 
+        felx-direction: row (alinha os itens horizontalmente da esquerda para a direita)
+
+        felx-direction: row-reverse (inverte a ordem dos itens horizontalmente da direita para a esquerda)
+
+        felx-direction: column (alinha os itens verticalmente de cima para baixo)
+
+        felx-direction: column-reverse (inverte a ordem dos itens verticalmente de baixo para cima)
+        
+        MAIN-START
+        FLEX-DIRECTION: ROW (cima para baixo)
+        MAIN-AXIS (esquerda para direita)
+        CROSS-AXIS (cima para baixo)
+
+        FLEX-DIRECTION: ROW-REVERSE (baixo para cima)
+        MAIN-AXIS (direita para esquerda)
+        CROSS-AXIS (cima para baixo)
+
+        FLEX-DIRECTION: COLUMN (esquerda para direita)
+        MAIN-AXIS (cima para baixo)
+        CROSS-AXIS (esquerda para direita)
+
+        FLEX-DIRECTION: COLUMN-REVERSE (direita para esquerda)
+        MAIN-AXIS (baixo para cima)
+        CROSS-AXIS (esquerda para direita)
+        
+        MAIN-END
+        FLEX-DIRECTION: ROW
+        MAIN-AXIS (esquerda para direita)
+        CROSS-AXIS (cima para baixo)
+        MAIN-END (direita)
+
+        FLEX-DIRECTION: ROW-REVERSE
+        MAIN-AXIS (direita para esquerda)
+        CROSS-AXIS (cima para baixo)
+        MAIN-END (esquerda)
+
+        FLEX-DIRECTION: COLUMN
+        MAIN-AXIS (cima para baixo)
+        CROSS-AXIS (esquerda para direita)
+        MAIN-END (baixo)
+
+        FLEX-DIRECTION: COLUMN-REVERSE
+        MAIN-AXIS (baixo para cima)
+        CROSS-AXIS (esquerda para direita)
+        MAIN-END (cima)
+
+        */
+       
+        #container {
+            background-color: gray;
+            display: flex; /* Define o container como flexível */
+            
+            
+            
+        }
+
+        .item {
+            background-color: white;
+            border: 1px solid black;
+            flex: auto; /* Define o item como flexível */
+            text-align: center;
+            padding: 5px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
