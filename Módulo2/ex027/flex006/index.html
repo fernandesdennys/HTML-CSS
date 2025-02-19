@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    
+    <style>
+        /* 
+
+        align-content: flex-end;   Alinha no final do eixo   
+        align-content: flex-start;  Alinha no inicio do eixo  
+        align-content: center; Alinha entre cross-start e corss end, centralizando o itens
+        align-content: space-between; Separa os itens para as extremidades, deixando o centro do container livre
+        align-content: space-evenly;  Coloca um espeço no cross-start e cross-end e dividindo o restante do container entreos elementos
+        align-content: space-around;  Divi em container e centraliza os itens dentro de cada container
+
+        */       
+        #container {
+            background-color: gray;
+            display: flex; /* Define o container como flexível */
+            flex-flow: row wrap;
+            align-content: space-around;
+            height: 400px;
+
+            
+        }
+
+        .item {
+            background-color: white;
+            border: 1px solid black;
+            text-align: center;
+            padding: 40px;
+        
+            
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+        <div class="item">L</div>
+        <div class="item">M</div>
+    </div>
+</body>
+</html>
