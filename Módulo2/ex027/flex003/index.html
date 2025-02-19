@@ -4,18 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexible Box</title>
-    <style>       
+    <style>
+        /*
+
+        justify-content: flex-start;  O espaço em branco fica sempre no final do eixo principal.
+
+        justify-content: felx-end O ultimo iten vai ser grudado no main end e o espaço em branco junto ao main start.
+
+        justify-content: center Vai centralizar dividindo o espaço em branco nas laterais ou em cima e baixo.
+
+        ALINHAMENTO DE ESPEÇAMENTO
+
+        jusify-content space-between Faz com que o o primeiro iten fica no main-start e o ultimo no main-end (isso dependendo do eixo ptincipal) e o espeço em branco "restante" sera dividido entre os outros itens
+
+        justfy-content: spacec-evenly Será dividido todos os itens incluindo o primeiro e o ultimo dentro do container com o mesmo espaço centra.
+
+        justify-content: space-around Divite o contaider de acordo com a quantidade de itens dentro e faz com que eles sejam divididos e centralizados.
+        
+        */
+        
+
+        
         #container {
             background-color: gray;
             display: flex; /* Define o container como flexível */
-            flex-flow: row wrap;        
+            flex-flow: row nowrap;
+            justify-content: space-between; 
+                 
         }
 
         .item {
             background-color: white;
             border: 1px solid black;
             text-align: center;
-            flex: auto;
+            
         
             
         }
