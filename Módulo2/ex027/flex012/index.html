@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        /* 
+        ORDEM CORRETA DO SHORTHAND
+        FLEX = FLEX-GROW + FLEX-SHRINK + FLEX-BASIS
+        EX. (flex: 0 1 150px;)
+        por padrao = (flex: 0 1 auto ou initial)
+        (flex: 0 0 auto ou flex: none, nada FLEXÍVEL) e também
+        flex: 1 1 auto  ou flex: auto Totalmente flexivel
+        e quadno colocarmos apenas 1 numero como flex:3, esse valor
+        representara somento o "flex-grow" e mandanto o flex-shrink e flex-basis padrão.
+
+        */       
+        div#container {
+        background-color: gray;
+        display: flex; /* Define o container como flexível */
+        flex-flow: row nowrap;
+      }
+      div.item {
+        background-color: aliceblue;
+        border: 1px solid black;        
+        text-align: center;
+      }
+
+      div#cxA {
+        /* flex-grow: 0; 
+        flex-shrink: 0;
+        flex-basis: 150px; */
+        flex: 0 0 150px;
+      }
+      div#cxB {
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: 150px;
+      }
+      div#cxC {
+        flex-grow: 0;
+        flex-shrink: 2;
+        flex-basis: 150px;
+      }
+      div#cxD {
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 150px;
+      }
+      div#cxE {
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: 150px;
+      }
+      div#cxF {
+        flex-grow: 2;
+        flex-shrink: 1;
+        flex-basis: 150px;
+      }
+      div#cxG {
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 150px;
+      }
+      div#cxH {
+        flex-grow: 3;
+        flex-shrink: 1;
+        flex-basis: 150px;
+      }
+      div#cxI {
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="item" id="cxA">A</div>
+      <div class="item" id="cxB">B</div>
+      <div class="item" id="cxC">C</div>
+    </div>
+    <div id="container">
+      <div class="item" id="cxD">D</div>
+      <div class="item" id="cxE">E</div>
+      <div class="item" id="cxF">F</div>
+    </div>
+    <div id="container">
+      <div class="item" id="cxG">G</div>
+      <div class="item" id="cxH">H</div>
+      <div class="item" id="cxI">I</div>
+    </style>
+</head>
+</html>
