@@ -1,80 +1,80 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flexible Box</title>
     <style>
-        /* 
+      /* 
         flex srhink (sempre 1 por padrão) = Com o valor 1, diferente de 0 e positivo pode ENCOLHER.
         flex grow = (sempre 0 por padrão) = Todos os itens configurado com valor 0 nao pode CRESCER.
         flex basis = DEFINE O TAMANHO DO ITEM DENTRO DO CONTAINER
         */
-        div#container {
-            background-color: gray;
-            display: flex; /* Define o container como flexível */ 
-            flex-flow: row nowrap;            
-        }
-        div.item {
-            background-color: aliceblue;
-            border: 1px solid black;
-            flex-basis: 150px;
-        }
+      div#container {
+        background-color: gray;
+        display: flex; /* Define o container como flexível */
+        flex-flow: row nowrap;
+      }
+      div.item {
+        background-color: aliceblue;
+        border: 1px solid black;
+        flex-basis: 150px;
+        text-align: center;
+      }
 
-        div#cxA {
-            flex-shrink: 0; 
-            flex-grow: 0;
-               
-        }
-        div#cxB {
-            flex-shrink: 1;
-            flex-grow: 0;
-        }
-        div#cxC {
-            flex-shrink: 2;
-            flex-grow: 0;
-        }
-        div#cxD {
-            flex-shrink: 1;
-            flex-grow: 1;
-        }
-        div#cxE {
-            flex-shrink: 1;
-            flex-grow: 0;
-        }
-        div#cxF {;
-            flex-shrink: 1;
-            flex-grow: 2;
-        }
-        div#cxG {
-            flex-shrink: 1;
-            flex-grow: 0;
-        }
-        div#cxH {
-            flex-shrink: 1;
-            flex-grow: 0;
-        }
-        div#cxI {
-            flex-shrink: 1;
-            flex-grow: 0;
-        }
-        </style>
-</head>
-<body>
+      div#cxA {
+        flex-shrink: 0;
+        flex-grow: 0;
+      }
+      div#cxB {
+        flex-shrink: 1;
+        flex-grow: 0;
+      }
+      div#cxC {
+        flex-shrink: 2;
+        flex-grow: 0;
+      }
+      div#cxD {
+        flex-shrink: 1;
+        flex-grow: 1;
+      }
+      div#cxE {
+        flex-shrink: 1;
+        flex-grow: 0;
+      }
+      div#cxF {
+        flex-shrink: 1;
+        flex-grow: 2;
+      }
+      div#cxG {
+        flex-shrink: 1;
+        flex-grow: 1;
+      }
+      div#cxH {
+        flex-shrink: 1;
+        flex-grow: 3;
+      }
+      div#cxI {
+        flex-shrink: 1;
+        flex-grow: 0;
+      }
+    </style>
+  </head>
+  <body>
     <div id="container">
-        <div class="item" id="cxA">A</div>
-        <div class="item" id="cxB">B</div>
-        <div class="item" id="cxC">C</div>
+      <div class="item" id="cxA">A</div>
+      <div class="item" id="cxB">B</div>
+      <div class="item" id="cxC">C</div>
     </div>
     <div id="container">
-        <div class="item" id="cxD">D</div>
-        <div class="item" id="cxE">E</div>
-        <div class="item" id="cxF">F</div>
+      <div class="item" id="cxD">D</div>
+      <div class="item" id="cxE">E</div>
+      <div class="item" id="cxF">F</div>
     </div>
     <div id="container">
-        <div class="item" id="cxG">G</div>
-        <div class="item" id="cxH">H</div>
-        <div class="item" id="cxI">I</div>
+      <div class="item" id="cxG">G</div>
+      <div class="item" id="cxH">H</div>
+      <div class="item" id="cxI">I</div>
     </div>
-</body>
+  </body>
 </html>
