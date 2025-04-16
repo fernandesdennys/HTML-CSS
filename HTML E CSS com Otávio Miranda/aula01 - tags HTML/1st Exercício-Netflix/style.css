@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(img/backgroundNETFLIX.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+main {
+  background-color: rgba(0, 0, 0, 0.712);
+  width: 100vw;
+  height: 100vh;
+}
+.top_header {
+  width: 75%;
+  height: 88px;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+.netflixl_Logo {
+  margin-left: 50px;
+  width: 200px;
+}
+.btn_signin {
+  border-radius: 5px;
+  border: none;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  width: 80px;
+  height: 32px;
+  margin-right: 50px;
+
+}
+.inicio_central {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+color: white;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulo_central {
+  margin-top: 250px;
+  font-family: Helvetica, sans-serif;
+  font-weight: bolder;
+  color: white;
+  font-size: 3em;
+}
+.inicio_central h2{
+  margin: 30px 0px;
+}
+.btn_input {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.btn_input input {
+  width: 400px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: rgba(240, 248, 255, 0.11);
+  border: none;
+  outline:  solid 0.5px rgba(255, 255, 255, 0.377);
+  margin-right: 10px;
+}
