@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'Tondu_Beta';
+  src: url('font/Tondu_Beta.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Poppins-ExtraBold';
+  src: url('font/Poppins-ExtraBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Poppins-SemiBold';
+  src: url('font/Poppins-SemiBold.ttf') format('truetype');
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(img/backgroundNETFLIX.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+main {
+  background-color: rgba(0, 0, 0, 0.712);
+  width: 100vw;
+  height: 100vh;
+}
+.top_header {
+  width: 70%;
+  height: 88px;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+.netflixl_Logo {
+  margin-left: 50px;
+  width: 170px;
+}
+.btn_signin {
+  border-radius: 5px;
+  border: none;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  width: 80px;
+  height: 32px;
+  margin-right: 50px;
+}
+.inicio_central {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.inicio_central > h1 {
+  font-family: 'Poppins-ExtraBold';
+  font-size: 3.5em;
+}
+
+.titulo_central {
+  margin-top: 250px;
+  font-family: Helvetica, sans-serif;
+  font-weight: bolder;
+  color: white;
+  font-size: 3em;
+}
+.inicio_central h3 {
+  font-family: 'Poppins-SemiBold';
+  font-weight: lighter;
+  margin: 30px 0px;
+  font-weight: bold;
+}
+.btn_input {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.btn_input input {
+  width: 400px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: rgba(20, 20, 20, 0.507);
+  border: none;
+  outline: solid 0.5px rgba(255, 255, 255, 0.377);
+  margin-right: 10px;
+}
+.btn_input input::placeholder {
+  color: white;
+  padding-left: 10px;
+  font-size: 1.1em;
+}
+.btn_getstared {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3em;
+  font-weight: bolder;
+  padding: 0px 20px;
+  color: white;
+  background-color: red;
+  border: none;
+  border-radius: 5px;
+}
+.bnt_span1 {
+  font-size: 1.5em;
+  font-weight: lighter;
+  padding-left: 10px;
+}
